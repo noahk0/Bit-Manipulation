@@ -7,7 +7,6 @@ def reverse(self, x: int) -> int:
         if 7 < abs(digit := fmod(x, 10)) and unsign == 214748364 or 214748364 < unsign:
             return 0
 
-        n = n * 10 + digit
-        x = int(x / 10)
+        x, n = int(x / 10), n * 10 + digit
 
     return int(n)
